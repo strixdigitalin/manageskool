@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Manage Skool</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/templatemo-chain-app-dev.css" />
+    <link rel="stylesheet" href="assets/css/animated.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+  </head>
+
+  <body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+      <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- ***** Header Area Start ***** -->
+    <header
+      class="header-area header-sticky wow slideInDown"
+      data-wow-duration="0.75s"
+      data-wow-delay="0s"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <!-- ***** Logo Start ***** -->
+              <a href="index.html" class="logo">
+                <div style="font-size: 26px;font-weight: bold;">Manage Skool</div>
+              </a>
+              <!-- ***** Logo End ***** -->
+              <!-- ***** Menu Start ***** -->
+              <ul class="nav">
+                <li class="scroll-to-section">
+                  <a href="#top" class="active">Home</a>
+                </li>
+                <li class="scroll-to-section">
+                  <a href="#services">Features</a>
+                </li>
+                <li class="scroll-to-section"><a href="#about">About</a></li>
+                <!-- <li class="scroll-to-section">
+                  <a href="#pricing">Pricing</a>
+                </li> -->
+                <li class="scroll-to-section">
+                  <a href="#newsletter">Newsletter</a>
+                </li>
+                <li>
+                  <div class="gradient-button">
+                    <a id="modal_trigger" href="https://strix-school.drazs.com/"
+                      ><i class="fa fa-sign-in-alt"></i> Demo</a
+                    >
+                  </div>
+                </li>
+              </ul>
+              <a class="menu-trigger">
+                <span>Menu</span>
+              </a>
+              <!-- ***** Menu End ***** -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <div id="modal" class="popupContainer" style="display: none">
+      <div class="popupHeader">
+        <span class="header_title">Login</span>
+        <span class="modal_close"><i class="fa fa-times"></i></span>
+      </div>
+
+      <section class="popupBody">
+        <!-- Social Login -->
+        <div class="social_login">
+          <div class="">
+            <a href="#" class="social_box fb">
+              <span class="icon"><i class="fab fa-facebook"></i></span>
+              <span class="icon_title">Connect with Facebook</span>
+            </a>
+
+            <a href="#" class="social_box google">
+              <span class="icon"><i class="fab fa-google-plus"></i></span>
+              <span class="icon_title">Connect with Google</span>
+            </a>
+          </div>
+
+          <div class="centeredText">
+            <span>Or use your Email address</span>
+          </div>
+
+          <div class="action_btns">
+            <div class="one_half">
+              <a href="#" id="login_form" class="btn">Login</a>
+            </div>
+            <div class="one_half last">
+              <a href="#" id="register_form" class="btn">Sign up</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Username & Password Login form -->
+        <div class="user_login">
+          <form>
+            <label>Email / Username</label>
+            <input type="text" />
+            <br />
+
+            <label>Password</label>
+            <input type="password" />
+            <br />
+
+            <div class="checkbox">
+              <input id="remember" type="checkbox" />
+              <label for="remember">Remember me on this computer</label>
+            </div>
+
+            <div class="action_btns">
+              <div class="one_half">
+                <a href="#" class="btn back_btn"
+                  ><i class="fa fa-angle-double-left"></i> Back</a
+                >
+              </div>
+              <div class="one_half last">
+                <a href="#" class="btn btn_red">Login</a>
+              </div>
+            </div>
+          </form>
+
+          <a href="#" class="forgot_password">Forgot password?</a>
+        </div>
+
+        <!-- Register Form -->
+        <div class="user_register">
+          <form>
+            <label>Full Name</label>
+            <input type="text" />
+            <br />
+
+            <label>Email Address</label>
+            <input type="email" />
+            <br />
+
+            <label>Password</label>
+            <input type="password" />
+            <br />
+
+            <div class="checkbox">
+              <input id="send_updates" type="checkbox" />
+              <label for="send_updates">Send me occasional email updates</label>
+            </div>
+
+            <div class="action_btns">
+              <div class="one_half">
+                <a href="#" class="btn back_btn"
+                  ><i class="fa fa-angle-double-left"></i> Back</a
+                >
+              </div>
+              <div class="one_half last">
+                <a href="#" class="btn btn_red">Register</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <div
+      class="main-banner wow fadeIn"
+      id="top"
+      data-wow-duration="1s"
+      data-wow-delay="0.5s"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="col-lg-6 align-self-center">
+                <div
+                  class="left-content show-up header-text wow fadeInLeft"
+                  data-wow-duration="1s"
+                  data-wow-delay="1s"
+                >
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <h2>
+                        Manage Skool is a beautifully designed & intelligently
+                        developed School Management System
+                      </h2>
+                      <!-- <p>
+                        Manage Skool is a beautifully designed and intelligently developed School
+                        Management System
+                      </p> -->
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="white-button first-button scroll-to-section">
+                        <a href="https://strix-school.drazs.com/"
+                          >View Demo <i class="fab fa-apple"></i
+                        ></a>
+                      </div>
+                      <div class="white-button scroll-to-section">
+                        <a href="mailto:manageskool@gmail.com"
+                          >Contact Us <i class="fab fa-google-play"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div
+                  class="right-image wow fadeInRight"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.5s"
+                >
+                  <img src="assets/images/slider-dec.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="services" class="services section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2">
+            <div
+              class="section-heading wow fadeInDown"
+              data-wow-duration="1s"
+              data-wow-delay="0.5s"
+            >
+              <h4>Amazing <em>Services &amp; Features</em> for you</h4>
+              <img src="assets/images/heading-line-dec.png" alt="" />
+              <!-- <p>
+                If you need the greatest collection of HTML templates for your
+                business, please visit
+                <a rel="nofollow" href="https://www.toocss.com/" target="_blank"
+                  >TooCSS</a
+                >
+                Blog. If you need to have a contact form PHP script, go to
+                <a href="https://templatemo.com/contact" target="_parent"
+                  >our contact page</a
+                >
+                for more information.
+              </p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="service-item first-service">
+              <div class="icon"></div>
+              <h4>Multiuser Account System</h4>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="service-item second-service">
+              <div class="icon"></div>
+              <h4>Student Fees Management</h4>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="service-item third-service">
+              <div class="icon"></div>
+              <h4>Multiple Language Support</h4>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="service-item fourth-service">
+              <div class="icon"></div>
+              <h4>Class routine schedule</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="service-item first-service">
+              <div class="icon"></div>
+              <h4>Child Activity Monitor</h4>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="service-item second-service">
+              <div class="icon"></div>
+              <h4>Graphical Analysis of Fees</h4>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="service-item third-service">
+              <div class="icon"></div>
+              <h4>Exam Management Portal</h4>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="service-item fourth-service">
+              <div class="icon"></div>
+              <h4>Transport Management</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="service-item first-service">
+              <div class="icon"></div>
+              <h4>Hostel Management</h4>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="service-item second-service">
+              <div class="icon"></div>
+              <h4>Library Management</h4>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="service-item third-service">
+              <div class="icon"></div>
+              <h4>Daily Attendance</h4>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="service-item fourth-service">
+              <div class="icon"></div>
+              <h4>Sibling Management</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="service-item first-service">
+              <div class="icon"></div>
+              <h4>Billing & Accounting</h4>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="service-item second-service">
+              <div class="icon"></div>
+              <h4>Database Backup/Restore</h4>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="service-item third-service">
+              <div class="icon"></div>
+              <h4>Website Management</h4>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="service-item fourth-service">
+              <div class="icon"></div>
+              <h4>Online Admission Portal</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="about" class="about-us section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 align-self-center">
+            <div class="section-heading">
+              <h4><em>What We Do</em> &amp; Who We Are</h4>
+              <img src="assets/images/heading-line-dec.png" alt="" />
+              <p>
+                Manage Skool is a Quinkpost Private Limited subsidiary firm
+                which lets folks manage school at utmost ease.
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="box-item">
+                  <h4><a href="#">Regualar Maintenance</a></h4>
+                  <!-- <p>Lorem Ipsum Text</p> -->
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="box-item">
+                  <h4><a href="#">24/7 Support &amp; Help</a></h4>
+                  <!-- <p>Lorem Ipsum Text</p> -->
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="box-item">
+                  <h4><a href="#">Bug Fixing</a></h4>
+                  <!-- <p>Lorem Ipsum Text</p> -->
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="box-item">
+                  <h4><a href="#">Weekly Database Analysis</a></h4>
+                  <!-- <p>Lorem Ipsum Text</p> -->
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <p>
+                  Manage Skool is developed to smoothen the functioning of a
+                  school.
+                </p>
+                <div class="gradient-button">
+                  <a href="https://strix-school.drazs.com/">View Demo</a>
+                </div>
+                <!-- <span>*No Credit Card Required</span> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="right-image">
+              <img src="assets/images/about-right-dec.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="clients" class="the-clients">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2">
+            <div class="section-heading">
+              <h4>Check What <em>The Clients Say</em> About our product</h4>
+              <img src="assets/images/heading-line-dec.png" alt="" />
+              <!-- <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eismod tempor incididunt ut labore et dolore magna.
+              </p> -->
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="naccs">
+              <div class="grid">
+                <div class="row">
+                  <div class="col-lg-7 align-self-center">
+                    <div class="menu">
+                      <div class="first-thumb active">
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-4 col-sm-4 col-12">
+                              <h4>Ramnath Kabra</h4>
+                              <span class="date">14 July 2022</span>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                              <span class="category"
+                                >Crayon International School</span
+                              >
+                            </div>
+                            <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">4.8</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-4 col-sm-4 col-12">
+                              <h4>Manisha Purohit</h4>
+                              <span class="date">21 March 2022</span>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                              <span class="category">Wisdom Public School</span>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">4.5</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-4 col-sm-4 col-12">
+                              <h4>Thomas Catherin</h4>
+                              <span class="date">17 May 2022</span>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                              <span class="category">St. Joseph School</span>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">4.7</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-4 col-sm-4 col-12">
+                              <h4>Milind Javeri</h4>
+                              <span class="date">07 August 2021</span>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                              <span class="category"
+                                >Sunshine International School</span
+                              >
+                            </div>
+                            <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">3.9</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="last-thumb">
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-4 col-sm-4 col-12">
+                              <h4>Poorva Jain</h4>
+                              <span class="date">21 September 2021</span>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                              <span class="category"
+                                >Eco Heights Public School</span
+                              >
+                            </div>
+                            <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">4.3</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-5">
+                    <ul class="nacc">
+                      <li class="active">
+                        <div>
+                          <div class="thumb">
+                            <div class="row">
+                              <div class="col-lg-12">
+                                <div class="client-content">
+                                  <img src="assets/images/quote.png" alt="" />
+                                  <p>
+                                    “Very Robust. User-friendly and Support Team
+                                    is always available for any enquiries and
+                                    quick to respond to technical issues. ”
+                                  </p>
+                                </div>
+                                <!-- <div class="down-content">
+                                  <img
+                                    src="assets/images/client-image.jpg"
+                                    alt=""
+                                  />
+                                  <div class="right-content">
+                                    <h4>David Martino</h4>
+                                    <span>CEO of David Company</span>
+                                  </div>
+                                </div> -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="thumb">
+                            <div class="row">
+                              <div class="col-lg-12">
+                                <div class="client-content">
+                                  <img src="assets/images/quote.png" alt="" />
+                                  <p>
+                                    “Great School Management System, fine
+                                    design, and functionality. ”
+                                  </p>
+                                </div>
+                                <!-- <div class="down-content">
+                                  <img
+                                    src="assets/images/client-image.jpg"
+                                    alt=""
+                                  />
+                                  <div class="right-content">
+                                    <h4>Jake H. Nyo</h4>
+                                    <span>CTO of Digital Company</span>
+                                  </div>
+                                </div> -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="thumb">
+                            <div class="row">
+                              <div class="col-lg-12">
+                                <div class="client-content">
+                                  <img src="assets/images/quote.png" alt="" />
+                                  <p>
+                                    “Uniquely and beautifully designed code for
+                                    a modern School management Software. However
+                                    there is need to improve on the complete
+                                    Accounting and Financial Module to be
+                                    considered. ”
+                                  </p>
+                                </div>
+                                <!-- <div class="down-content">
+                                  <img
+                                    src="assets/images/client-image.jpg"
+                                    alt=""
+                                  />
+                                  <div class="right-content">
+                                    <h4>May C.</h4>
+                                    <span>Founder of Catherina Co.</span>
+                                  </div>
+                                </div> -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="thumb">
+                            <div class="row">
+                              <div class="col-lg-12">
+                                <div class="client-content">
+                                  <img src="assets/images/quote.png" alt="" />
+                                  <p>
+                                    “This is one of the best School Management
+                                    systems in market and they have great
+                                    customer support with quick responses. ”
+                                  </p>
+                                </div>
+                                <!-- <div class="down-content">
+                                  <img
+                                    src="assets/images/client-image.jpg"
+                                    alt=""
+                                  />
+                                  <div class="right-content">
+                                    <h4>Random Staff</h4>
+                                    <span>Manager, Digital Company</span>
+                                  </div>
+                                </div> -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="thumb">
+                            <div class="row">
+                              <div class="col-lg-12">
+                                <div class="client-content">
+                                  <img src="assets/images/quote.png" alt="" />
+                                  <p>
+                                    “A fantastic team! Great customer support
+                                    from beginning to end of the process. The
+                                    team are really informed and go the extra
+                                    mile at every stage. I would recommend them
+                                    unreservedly. ”
+                                  </p>
+                                </div>
+                                <!-- <div class="down-content">
+                                  <img
+                                    src="assets/images/client-image.jpg"
+                                    alt=""
+                                  />
+                                  <div class="right-content">
+                                    <h4>Mark Am</h4>
+                                    <span>CTO, Amber Do Company</span>
+                                  </div>
+                                </div> -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div id="pricing" class="pricing-tables">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2">
+            <div class="section-heading">
+              <h4>We Have The Best Pre-Order <em>Prices</em> You Can Get</h4>
+              <img src="assets/images/heading-line-dec.png" alt="" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eismod tempor incididunt ut labore et dolore magna.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="pricing-item-regular">
+              <span class="price">$12</span>
+              <h4>Standard Plan App</h4>
+              <div class="icon">
+                <img src="assets/images/pricing-table-01.png" alt="" />
+              </div>
+              <ul>
+                <li>Lorem Ipsum Dolores</li>
+                <li>20 TB of Storage</li>
+                <li class="non-function">Life-time Support</li>
+                <li class="non-function">Premium Add-Ons</li>
+                <li class="non-function">Fastest Network</li>
+                <li class="non-function">More Options</li>
+              </ul>
+              <div class="border-button">
+                <a href="#">Purchase This Plan Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="pricing-item-pro">
+              <span class="price">$25</span>
+              <h4>Business Plan App</h4>
+              <div class="icon">
+                <img src="assets/images/pricing-table-01.png" alt="" />
+              </div>
+              <ul>
+                <li>Lorem Ipsum Dolores</li>
+                <li>50 TB of Storage</li>
+                <li>Life-time Support</li>
+                <li>Premium Add-Ons</li>
+                <li class="non-function">Fastest Network</li>
+                <li class="non-function">More Options</li>
+              </ul>
+              <div class="border-button">
+                <a href="#">Purchase This Plan Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="pricing-item-regular">
+              <span class="price">$66</span>
+              <h4>Premium Plan App</h4>
+              <div class="icon">
+                <img src="assets/images/pricing-table-01.png" alt="" />
+              </div>
+              <ul>
+                <li>Lorem Ipsum Dolores</li>
+                <li>120 TB of Storage</li>
+                <li>Life-time Support</li>
+                <li>Premium Add-Ons</li>
+                <li>Fastest Network</li>
+                <li>More Options</li>
+              </ul>
+              <div class="border-button">
+                <a href="#">Purchase This Plan Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <footer id="newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2">
+            <div class="section-heading">
+              <h4>Join our mailing list to receive updates on our software.</h4>
+            </div>
+          </div>
+          <div class="col-lg-6 offset-lg-3">
+            <form id="search" action="#" method="GET">
+              <div class="row">
+                <div class="col-lg-6 col-sm-6">
+                  <fieldset>
+                    <input
+                      type="address"
+                      name="address"
+                      class="email"
+                      placeholder="Email Address..."
+                      autocomplete="on"
+                      required
+                    />
+                  </fieldset>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                  <fieldset>
+                    <button type="submit" class="main-button">
+                      Subscribe Now <i class="fa fa-angle-right"></i>
+                    </button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="footer-widget">
+              <h4>Contact Us</h4>
+              <p>
+                143-147, 1st Floor, IJMIMA building, Mindspace Opposite
+                Interface Building, behind Goregaon Sports Complex, Malad West,
+                Mumbai, Maharashtra - 400064
+              </p>
+              <p><a href="#">+91-00000000000</a></p>
+              <p><a href="#">manageskool@gmail.com</a></p>
+            </div>
+          </div>
+          <!-- <div class="col-lg-3">
+            <div class="footer-widget">
+              <h4>About Us</h4>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Pricing</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Pricing</a></li>
+              </ul>
+            </div>
+          </div> -->
+          <div class="col-lg-4">
+            <div class="footer-widget">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="https://strix-school.drazs.com/">Demo</a></li>
+                <!-- <li><a href="#">App Engine</a></li>
+                <li><a href="#">Programming</a></li>
+                <li><a href="#">Development</a></li>
+                <li><a href="#">App News</a></li> -->
+              </ul>
+              <!-- <ul>
+                <li><a href="#">App Dev Team</a></li>
+                <li><a href="#">Digital Web</a></li>
+                <li><a href="#">Normal Apps</a></li>
+              </ul> -->
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="footer-widget">
+              <h4>About Our Company</h4>
+              <h2 style="color: #fff; margin-bottom: 20px">MANAGE SKOOL</h2>
+              <p>
+                Manage Skool is a complete School Management Software that let's
+                school owner manage school digitally on their fingertips.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="copyright-text">
+              <p>
+                Copyright © 2022 Manage Skool. All Rights Reserved.
+                <!-- <br />Design:
+                <a
+                  href="https://templatemo.com/"
+                  target="_blank"
+                  title="css templates"
+                  >TemplateMo</a
+                > -->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/animation.js"></script>
+    <script src="assets/js/imagesloaded.js"></script>
+    <script src="assets/js/popup.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>
